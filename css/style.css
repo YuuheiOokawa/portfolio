@@ -144,6 +144,15 @@ body {
   letter-spacing: -0.02em;
   font-weight: 800;
 }
+.h1-sub {
+  display: inline-block;
+  font-size: 0.42em;
+  font-weight: 600;
+  color: var(--fg-muted);
+  margin-left: 12px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
 .lead {
   font-size: 1.1rem;
   color: var(--fg-muted);
@@ -231,6 +240,71 @@ body {
   border-radius: 999px;
 }
 .tag-list.small li { font-size: 0.76rem; padding: 4px 10px; }
+
+/* Timeline (Experience) */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--border);
+}
+.timeline-item {
+  position: relative;
+  padding: 0 0 32px 28px;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-alt);
+}
+.timeline-period {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+.timeline-item h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+.timeline-item p {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+  max-width: 680px;
+}
+
+/* Certifications */
+.cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cert-list li {
+  padding: 14px 18px;
+  background: var(--tag-bg);
+  border-radius: 10px;
+  font-size: 0.92rem;
+}
+.cert-date {
+  display: inline-block;
+  min-width: 92px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
 
 /* Filter bar */
 .filter-bar {
