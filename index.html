@@ -59,8 +59,8 @@
         基本設計参画、若手メンバー3名のマネジメント、営業職としての顧客折衝も経験しています。
       </p>
       <p class="section-lead">
-        並行して個人開発でも9件以上のリポジトリを継続的に公開。業務効率化ツール、リアルタイム通信アプリ、
-        サーバー権威設計のブラウザゲーム、資格学習サイトなど、企画〜設計〜実装〜運用まで一人で手がけています。
+        並行して個人開発でも12件以上のリポジトリを継続的に公開。業務効率化ツール、リアルタイム通信アプリ、
+        サーバー権威設計のブラウザゲーム、資格学習サイト、FX分析基盤など、企画〜設計〜実装〜運用まで一人で手がけています。
         Vercel / Neon(PostgreSQL) を用いたサーバーレス構成や、Cronによる自動化バッチの設計・運用経験もあります。
       </p>
     </div>
@@ -154,7 +154,7 @@
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Projects</h2>
-      <p class="section-lead">GitHub で公開している主なリポジトリです。カードをクリックすると各リポジトリに移動します。</p>
+      <p class="section-lead">GitHub で公開している主なリポジトリです。「アプリを見る」からライブプレビューを、GitHubリンクからソースコードを確認できます。</p>
 
       <div class="filter-bar" role="group" aria-label="カテゴリで絞り込み">
         <button class="filter-btn is-active" data-filter="all">すべて</button>
@@ -165,7 +165,12 @@
 
       <div class="project-grid">
 
-        <a class="project-card" data-category="webapp" href="https://github.com/YuuheiOokawa/talkWithMe" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="down"
+             data-name="talkWithMe"
+             data-desc="招待リンクを知る2人だけが使えるプライベートチャットアプリ。Vercel Serverless Functions + PostgreSQL でテキスト・画像を永続化し、ポーリングでリアルタイムに近い更新を実現。"
+             data-tags="Next.js,PostgreSQL,Vercel Functions"
+             data-live="https://talk-with-me-eight.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/talkWithMe">
           <div class="card-body">
             <h3>talkWithMe</h3>
             <p>招待リンクを知る2人だけが使えるプライベートチャットアプリ。Vercel Serverless Functions + PostgreSQL でテキスト・画像を永続化し、ポーリングでリアルタイムに近い更新を実現。</p>
@@ -173,9 +178,18 @@
               <li>Next.js</li><li>PostgreSQL</li><li>Vercel Functions</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/talkWithMe" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="webapp" href="https://github.com/YuuheiOokawa/juniorSoccerSetting" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="protected"
+             data-name="Junior Soccer Lineup Manager"
+             data-desc="小学生8人制サッカーのポジション・出場時間を自動編成するアプリ。制約充足＋スコアリング＋ランダム性で公平な出場時間を算出し、監督・コーチの負担を軽減。"
+             data-tags="Next.js 15,Prisma,PostgreSQL"
+             data-live="https://junior-soccer-setting.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/juniorSoccerSetting">
           <div class="card-body">
             <h3>Junior Soccer Lineup Manager</h3>
             <p>小学生8人制サッカーのポジション・出場時間を自動編成するアプリ。制約充足＋スコアリング＋ランダム性で公平な出場時間を算出し、監督・コーチの負担を軽減。</p>
@@ -183,9 +197,18 @@
               <li>Next.js 15</li><li>Prisma</li><li>PostgreSQL</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/juniorSoccerSetting" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="webapp" href="https://github.com/YuuheiOokawa/NotePilot" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="down"
+             data-name="NotePilot (Note Auto Creator)"
+             data-desc="note記事の作成・販売を支援するPWA。AIが下書き・テーマ・販売設計を提案し、投稿は必ずユーザー承認制。Vercel Cronによる自動生成・自動割当バッチを設計。"
+             data-tags="Next.js,PWA,Vercel Cron"
+             data-live="https://note-pilot-beta.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/NotePilot">
           <div class="card-body">
             <h3>NotePilot (Note Auto Creator)</h3>
             <p>note記事の作成・販売を支援するPWA。AIが下書き・テーマ・販売設計を提案し、投稿は必ずユーザー承認制。Vercel Cronによる自動生成・自動割当バッチを設計。</p>
@@ -193,19 +216,56 @@
               <li>Next.js</li><li>PWA</li><li>Vercel Cron</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/NotePilot" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="webapp" href="https://github.com/YuuheiOokawa/exam-schedule" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="live"
+             data-name="星詠み (FortunePhone)"
+             data-desc="名前と生年月日から恋愛・仕事・金銭・健康運を診断する占いアプリ。入力データはブラウザ内のみで処理し、サーバーへの送信・保存は行わない設計。"
+             data-tags="JavaScript,HTML5,CSS3"
+             data-live="https://fortune-phone.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/FortunePhone">
+          <div class="card-body">
+            <h3>星詠み (FortunePhone)</h3>
+            <p>名前と生年月日から恋愛・仕事・金銭・健康運を診断する占いアプリ。入力データはブラウザ内のみで処理し、サーバーへの送信・保存は行わない設計。</p>
+            <ul class="tag-list small">
+              <li>JavaScript</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/FortunePhone" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="webapp" data-status="live"
+             data-name="資格試験スケジュール管理アプリ"
+             data-desc="資格試験の日程・申込期間・合格発表日をカレンダーで一元管理。フロントエンド/バックエンド分離構成で実装。"
+             data-tags="React,Node.js,PostgreSQL,PWA"
+             data-live="https://exam-schedule-keeper.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/exam-schedule">
           <div class="card-body">
             <h3>資格試験スケジュール管理アプリ</h3>
             <p>資格試験の日程・申込期間・合格発表日をカレンダーで一元管理。フロントエンド/バックエンド分離構成で実装。</p>
             <ul class="tag-list small">
-              <li>Next.js</li><li>React</li><li>Node.js</li>
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/exam-schedule" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="webapp" href="https://github.com/YuuheiOokawa/inakuro-db" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="live"
+             data-name="イナクロ育成DB"
+             data-desc="キャラクター育成・覚醒素材計算・パッシブスキル管理を行うローカル動作のWebアプリ。サーバー不要でlocalStorageに永続化。"
+             data-tags="Next.js 16,Tailwind CSS v4,React Context"
+             data-live="https://inakuro-db.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/inakuro-db">
           <div class="card-body">
             <h3>イナクロ育成DB</h3>
             <p>キャラクター育成・覚醒素材計算・パッシブスキル管理を行うローカル動作のWebアプリ。サーバー不要でlocalStorageに永続化。</p>
@@ -213,9 +273,56 @@
               <li>Next.js 16</li><li>Tailwind CSS v4</li><li>React Context</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/inakuro-db" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="game" href="https://github.com/YuuheiOokawa/Rogue-Chronicle" target="_blank" rel="noopener">
+        <div class="project-card" data-category="webapp" data-status="dev"
+             data-name="FX Trading Lab"
+             data-desc="個人用のFX監視・テクニカル分析・売買シミュレーション基盤。ルールベースのシグナルエンジンとリスク管理層を実装し、実弾取引は複数条件を満たすまで既定で無効化する安全設計。"
+             data-tags="Next.js,FastAPI,PostgreSQL,Redis"
+             data-live=""
+             data-github="https://github.com/YuuheiOokawa/FXTradingLab">
+          <div class="card-body">
+            <h3>FX Trading Lab</h3>
+            <p>個人用のFX監視・テクニカル分析・売買シミュレーション基盤。ルールベースのシグナルエンジンとリスク管理層を実装し、実弾取引は複数条件を満たすまで既定で無効化する安全設計。</p>
+            <ul class="tag-list small">
+              <li>Next.js</li><li>FastAPI</li><li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">詳細を見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/FXTradingLab" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="webapp" data-status="dev"
+             data-name="Agentia"
+             data-desc="Claude Codeの活動（ファイル編集・コマンド実行・エラーなど）をリアルタイムに仮想オフィスとして可視化するダッシュボードの設計・実装プロジェクト。"
+             data-tags="Next.js,Fastify,WebSocket"
+             data-live=""
+             data-github="https://github.com/YuuheiOokawa/Agentia">
+          <div class="card-body">
+            <h3>Agentia</h3>
+            <p>Claude Codeの活動（ファイル編集・コマンド実行・エラーなど）をリアルタイムに仮想オフィスとして可視化するダッシュボードの設計・実装プロジェクト。</p>
+            <ul class="tag-list small">
+              <li>Next.js</li><li>Fastify</li><li>WebSocket</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">詳細を見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/Agentia" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="game" data-status="live"
+             data-name="Rogue Chronicle"
+             data-desc="挑戦の度に構造・敵・報酬が変化するローグライトRPG。戦闘結果・報酬を全てサーバー側で計算するサーバー権威設計でチート耐性を確保。設計判断はDecision Logとして文書化。"
+             data-tags="Next.js,Prisma / Neon,Auth.js,Vitest / Playwright"
+             data-live="https://rogue-chronicle.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/Rogue-Chronicle">
           <div class="card-body">
             <h3>Rogue Chronicle</h3>
             <p>挑戦の度に構造・敵・報酬が変化するローグライトRPG。戦闘結果・報酬を全てサーバー側で計算するサーバー権威設計でチート耐性を確保。設計判断はDecision Logとして文書化。</p>
@@ -223,9 +330,18 @@
               <li>Next.js</li><li>Prisma / Neon</li><li>Auth.js</li><li>Vitest / Playwright</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/Rogue-Chronicle" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="game" href="https://github.com/YuuheiOokawa/arukana-brade" target="_blank" rel="noopener">
+        <div class="project-card" data-category="game" data-status="live"
+             data-name="アルカナブレイド"
+             data-desc="ブラウザ・スマホ向けのターン制RPG。ユニット・召喚・クエストなど独自のマスタデータ設計を持つ。"
+             data-tags="React 19,Vite,Zustand"
+             data-live="https://arukana-brade.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/arukana-brade">
           <div class="card-body">
             <h3>アルカナブレイド</h3>
             <p>ブラウザ・スマホ向けのターン制RPG。ユニット・召喚・クエストなど独自のマスタデータ設計を持つ。</p>
@@ -233,19 +349,37 @@
               <li>React 19</li><li>Vite</li><li>Zustand</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/arukana-brade" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="game" href="https://github.com/YuuheiOokawa/DevQuest-Empire" target="_blank" rel="noopener">
+        <div class="project-card" data-category="game" data-status="live"
+             data-name="DevQuest Empire"
+             data-desc="GitHubの活動（コミット・PR・Issueなど）と連動して自分の分身が成長する育成ゲーム。GitHub OAuthでログインし、Octokit経由で活動データを取得、Claude APIやReact Three Fiberを活用。"
+             data-tags="Next.js,Auth.js,Octokit,Claude API,React Three Fiber"
+             data-live="https://devquest-empire.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/DevQuest-Empire">
           <div class="card-body">
             <h3>DevQuest Empire</h3>
-            <p>GitHubの活動（コミット・PRなど）と連動して成長する育成ゲームの構想・実装プロジェクト。</p>
+            <p>GitHubの活動（コミット・PR・Issueなど）と連動して自分の分身が成長する育成ゲーム。GitHub OAuthでログインし、Octokit経由で活動データを取得、Claude APIやReact Three Fiberを活用。</p>
             <ul class="tag-list small">
-              <li>Next.js</li><li>TypeScript</li>
+              <li>Next.js</li><li>Auth.js</li><li>Claude API</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/DevQuest-Empire" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
-        <a class="project-card" data-category="learning" href="https://github.com/YuuheiOokawa/javaSilver" target="_blank" rel="noopener">
+        <div class="project-card" data-category="learning" data-status="live"
+             data-name="Java Silver 学習サイト"
+             data-desc="Oracle Certified Java Programmer, Silver SE 11 合格を目指す自己学習用サイト。35問以上のオリジナル問題と、間違えた問題の自動保存・復習機能を実装。"
+             data-tags="HTML5,CSS3,JavaScript"
+             data-live="https://java-silver.vercel.app"
+             data-github="https://github.com/YuuheiOokawa/javaSilver">
           <div class="card-body">
             <h3>Java Silver 学習サイト</h3>
             <p>Oracle Certified Java Programmer, Silver SE 11 合格を目指す自己学習用サイト。35問以上のオリジナル問題と、間違えた問題の自動保存・復習機能を実装。</p>
@@ -253,7 +387,11 @@
               <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
             </ul>
           </div>
-        </a>
+          <div class="card-actions">
+            <button class="card-detail-btn" type="button">アプリを見る</button>
+            <a class="card-github-link" href="https://github.com/YuuheiOokawa/javaSilver" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -290,6 +428,23 @@
     <p>&copy; 2026 Yuuhei Okawa</p>
   </div>
 </footer>
+
+<div class="modal-overlay" id="project-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="閉じる">&times;</button>
+    <h3 class="modal-title" id="modal-title"></h3>
+    <p class="modal-desc"></p>
+    <ul class="tag-list small modal-tags"></ul>
+    <div class="modal-preview">
+      <iframe class="modal-iframe" title="アプリのライブプレビュー" loading="lazy" hidden></iframe>
+      <p class="modal-preview-note"></p>
+    </div>
+    <div class="modal-actions">
+      <a class="btn btn-primary modal-live-link" target="_blank" rel="noopener">アプリを開く ↗</a>
+      <a class="btn btn-ghost modal-github-link" target="_blank" rel="noopener">GitHubで見る</a>
+    </div>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
